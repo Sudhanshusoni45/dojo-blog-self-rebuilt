@@ -47,8 +47,9 @@ const CreateBlog = () => {
         </div>
 
         <select value={author} onChange={(e) => setAuthor(e.target.value)}>
-          <option value="mario">mario</option>
-          <option value="yoshi">yoshi</option>
+          <option value="Sudhanshu">Sudhanshu</option>
+          <option value="Pravesh">Pravesh</option>
+          <option value="Pranjal">Pranjal</option>
         </select>
         <button onClick={handleSubmit}>Submit</button>
       </form>
