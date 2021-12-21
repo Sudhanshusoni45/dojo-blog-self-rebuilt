@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 const CreateBlog = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
-  const [author, setAuthor] = useState("mario");
+  const [author, setAuthor] = useState("sudhanshu");
   const blog = { title, body, author };
   const history = useHistory();
 

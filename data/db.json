@@ -17,6 +17,12 @@
       "body": "Lorem Ipsum dolor",
       "author": "mario",
       "id": 3
+    },
+    {
+      "title": "Test",
+      "body": "Testing",
+      "author": "mario",
+      "id": 4
     }
   ]
 }
