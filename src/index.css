@@ -1,13 +1,131 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #f1356d;
+}
+/* navigation bar */
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  /* border: #333 solid 3px; */
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  border-bottom: 0.5px solid rgb(230, 230, 230);
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+  /* border: solid 2px yellow; */
+  margin: 0 4rem 0 0;
+}
+
+.navBar h2 {
+  margin: 0 0 0 4rem;
+  color: var(--primary-color);
+}
+
+.navBar h2 a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navBar ul li {
+  /* border: solid red 3px; */
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.navBar ul a {
+  text-decoration: none;
+}
+
+/* Home page */
+.blog-card {
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+  /* padding-left: 6.9rem; */
+  border-radius: 5px;
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-card a {
+  text-decoration: none;
+}
+
+.blog-card h3 {
+  color: var(--primary-color);
+}
+
+.blog-card:hover {
+  box-shadow: 5px 8px 8px rgb(119, 119, 119);
+  cursor: pointer;
+}
+
+.blog-card article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* create page */
+.blogForm {
+  display: flex;
+  flex-flow: column wrap;
+  /* max-width: 600px; */
+  justify-content: center;
+  /* border: solid 3px orange; */
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.blogForm div {
+  margin: 0.5rem 0 0 0;
+}
+
+.blogForm input,
+textarea {
+  /* max-width: 400px; */
+  display: block;
+  width: 400px;
+}
+
+.blogForm select,
+button {
+  margin: 0.5rem 0 0 0;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  color: black;
+}
+
+.blogForm button:hover {
+  cursor: pointer;
+}
+/* Blog Details */
+
+.blog-Details {
+  margin: 1rem auto;
+  max-width: 600px;
 }
