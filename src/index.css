@@ -120,6 +120,10 @@ button {
   color: black;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .blogForm button:hover {
   cursor: pointer;
 }
